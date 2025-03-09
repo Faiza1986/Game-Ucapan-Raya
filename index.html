@@ -6,7 +6,17 @@
     <title>Game Ucapan Raya</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body><body>
+    <audio id="bg-music" loop>
+        <source src="assets/lagu-raya.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        window.onload = function() {
+            document.getElementById("bg-music").play();
+        }
+    </script>
+</body>
+
     <h1>Selamat Hari Raya!</h1>
     <p>Padankan ikon yang sama untuk melihat ucapan khas!</p>
     <div id="game-board"></div>
